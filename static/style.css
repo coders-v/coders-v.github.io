@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 .rectangle{
     max-width: auto;
     height: 95vh;
@@ -5,7 +6,7 @@
     text-align:center;
 }
 .text{
-    font-family: 'Roboto Mono';
+    font-family: 'Roboto Mono', monospace;
     font-size: 36px;
     color:white;
 }
