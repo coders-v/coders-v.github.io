@@ -46,6 +46,6 @@ header {
     color: white;
 }
 
-.fab :hover {
-    color
+.fab:hover {
+    color: black;
 }
