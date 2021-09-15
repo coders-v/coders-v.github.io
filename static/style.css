@@ -1,6 +1,11 @@
-.rectangles{
+.rectangle{
     max-width: auto;
     height: 95vh;
     background-color: #212529;
     text-align:center;
+}
+.text{
+    font-family: 'Roboto Mono';
+    font-size: 36px;
+    color:white;
 }
