@@ -71,5 +71,16 @@ header {
     color: black;
 }
 
-
-@media only screen and (max-width: 370px)
+@media only screen and (max-width: 370px) {
+    button {
+        position: absolute;
+        top: 75px;
+        left: 50px;
+        border-radius: 5px;
+        background: transparent;
+        border: solid;
+    }
+    button::after {
+        background: white;
+    }
+}
