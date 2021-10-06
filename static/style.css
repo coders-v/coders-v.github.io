@@ -23,7 +23,14 @@
 }
 
 .button:hover {
-    background: black;
+    animation: animate infinte 5s;
+}
+
+@keyframes animate {
+    0% {
+        height: 10px;
+        background: white;
+    }
 }
 .center{
     vertical-align: middle;
