@@ -6,6 +6,23 @@
     background-color: #212529;
     text-align:center;
 }
+.ar {
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    animation: ani 2s infinite ;
+    animation-delay: -5s;
+}
+@keyframes ani {
+    0% {
+        top: 85%; opacity: 0.9;
+    }
+    100% {
+        top: 91%; opacity: 0;
+    }
+}
 .text{
     font-family: 'Roboto Mono', monospace;
     font-size: 36px;
