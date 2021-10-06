@@ -13,6 +13,10 @@
 
 .button{
     background-color:transparent;
+    color:white;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 24px;
     height:50px;
     width:100px;
     border: 3px solid white;
@@ -78,4 +82,18 @@ header {
 
 .fab:hover {
     color: black;
+}
+
+@media only screen and (max-width: 370px) {
+    button {
+        position: absolute;
+        top: 75px;
+        left: 50px;
+        border-radius: 5px;
+        background: transparent;
+        border: solid;
+    }
+    button::after {
+        background: white;
+    }
 }
