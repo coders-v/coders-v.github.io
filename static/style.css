@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 .rectangle{
     max-width: auto;
-    height: 95vh;
+    height: 100vh;
     background-color: #0f0f0fe3;
     text-align:center;
 }
@@ -14,6 +14,7 @@
     left: 48%;
     animation: ani 2s infinite ;
     animation-delay: -5s;
+    cursor:pointer;
 }
 @keyframes ani {
     0% {
@@ -56,6 +57,7 @@
     font-size: 1.4em;
     height:50px;
     width:100px;
+    left: -1%;
 }
 .button:hover {
     color: black;
