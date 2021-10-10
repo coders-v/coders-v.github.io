@@ -1,11 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@keyframes pulse {
+    from {
+        transform : translateY(50%);
+        opacity   : 0.2;
+    }
+    
+    to {
+        transform : translateY(0%);
+        opacity   : 1;
+    }
+}
+.animate{
+    animation-name: pulse;
+    animation-duration: 800ms;
+}
+.parallax {
+    /* The image used */
+    background-image: url('./img/printer.jpg');
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 .rectangle{
     max-width: auto;
     height: 100vh;
     background-color: #0f0f0fe3;
     text-align:center;
 }
+
 .ar {
     color: white;
     font-size: 35px;
@@ -169,3 +198,8 @@ header {
         background: white;
     }
 }
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
