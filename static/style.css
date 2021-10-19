@@ -29,8 +29,8 @@
     background-size: cover;
   }
 .rectangle{
-    max-width: auto;
-    height: 100vh;
+    width:auto;
+    height: 90vh;
     background-color: #0f0f0fe3;
     text-align:center;
 }
