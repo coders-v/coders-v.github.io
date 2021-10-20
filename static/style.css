@@ -14,12 +14,18 @@
     font-family: 'Roboto Mono', monospace;
     font-size: 2.0em;
     color:white;
+    padding:0% 25px;
 }
 
+.paragraph{
+    line-height: 2;
+    padding:0% 30px;
+}
+.positiontop{
+    padding-top:320px;
+}
 .center{
     vertical-align: middle;
-    position: relative;
-    top: 50%;
 }
 
 body {
@@ -27,17 +33,24 @@ body {
     height: 99.7vh;
 }
 
+/* Navbar color changing on scrolling effect */
+.navbar-fixed-top.scrolled {
+    background-color: black !important;
+    transition: background-color 200ms linear;
+}
+
+
 
 /* To animate slide up of text*/
 .animate{
     animation-name: pulse;
-    animation-duration: 800ms;
+    animation-duration: 700ms;
 }
 
 @keyframes pulse {
     from {
-        transform : translateY(50%);
-        opacity   : 0.2;
+        transform : translateY(23%);
+        opacity   : 0.1;
     }
     
     to {
@@ -136,6 +149,25 @@ body {
     opacity: 0.5;
     filter: alpha(opacity=40);
 }
+
+@media only screen and (max-device-width: 1366px) {
+    .text{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1.6em;
+        color:white;
+        padding:0% 6px;
+        line-height: 1.8;
+    }
+    .paragraph{
+        font-size: 1.4em;
+        line-height: 1.8;
+        padding:0% 10px;
+    }
+    .positiontop{
+        padding-top:220px;
+    }
+  }
+
 
 
 /* Things i don't know why they exist
