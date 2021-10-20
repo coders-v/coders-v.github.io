@@ -1,5 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+/* classical things */
+.rectangle{
+    width:auto;
+    height: 90vh;
+    background-color: #0f0f0fe3;
+    text-align:center;
+}
+
+.text{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.0em;
+    color:white;
+}
+
+.center{
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+}
+
+body {
+    margin: 0px;
+    height: 99.7vh;
+}
+
+
+/* To animate slide up of text*/
+.animate{
+    animation-name: pulse;
+    animation-duration: 800ms;
+}
+
 @keyframes pulse {
     from {
         transform : translateY(50%);
@@ -11,10 +45,9 @@
         opacity   : 1;
     }
 }
-.animate{
-    animation-name: pulse;
-    animation-duration: 800ms;
-}
+
+
+/*for parallax scrolling effect used in first section */
 .parallax {
     /* The image used */
     background-image: url('./img/printer.jpg');
@@ -28,36 +61,10 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-.rectangle{
-    width:auto;
-    height: 90vh;
-    background-color: #0f0f0fe3;
-    text-align:center;
-}
 
-.ar {
-    color: white;
-    font-size: 35px;
-    position: absolute;
-    top: 90%;
-    left: 48%;
-    animation: ani 2s infinite ;
-    animation-delay: -5s;
-    cursor:pointer;
-}
-@keyframes ani {
-    0% {
-        top: 85%; opacity: 0.9;
-    }
-    100% {
-        top: 91%; opacity: 0;
-    }
-}
-.text{
-    font-family: 'Roboto Mono', monospace;
-    font-size: 2.0em;
-    color:white;
-}
+
+
+/* to animate cards used in projects section */
 .card {
     background-color: rgba(255, 255, 255, 0.986);
     height:18.75em;
@@ -75,6 +82,14 @@
     padding: 2px 16px;
 }
 
+#card-link {
+    
+    width: 90%;
+    height: 18.75em;
+}
+
+
+/* styles and animation for buttons */
 .button{
     font-family: 'Oswald', sans-serif;
     border-radius: 2px;
@@ -88,34 +103,14 @@
     width:100px;
     left: -1%;
 }
+
 .button:hover {
     color: black;
     background: white;
-    animation: animate 90ms;
+    animation: animate_button_slideup 90ms;
 }
 
-.contactimages{
-    opacity: 1.0;
-    filter: alpha(opacity=100);
-}
-
-.contactimages:hover{
-    opacity: 0.5;
-    filter: alpha(opacity=40);
-}
-
-#card-link {
-    
-    width: 90%;
-    height: 18.75em;
-}
-a.fill-div {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-}
-@keyframes animate {
+@keyframes animate_button_slideup {
     0% {
         opacity: 0.2;
         height: 0px;
@@ -128,15 +123,22 @@ a.fill-div {
         opacity: 0.9;
     }
 }
-.center{
-    vertical-align: middle;
-    position: relative;
-    top: 50%;
+
+
+
+/* for contact us images dimmers in the last section */
+.contactimages{
+    opacity: 1.0;
+    filter: alpha(opacity=100);
 }
-body {
-    margin: 0px;
-    height: 99.7vh;
+
+.contactimages:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=40);
 }
+
+
+/* Things i don't know why they exist
 header a img{
     width: 5%;
 }
@@ -203,3 +205,4 @@ header {
       background-attachment: scroll;
     }
   }
+   */
